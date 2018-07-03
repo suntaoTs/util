@@ -10,7 +10,7 @@ if [ $? != 0 ]; then
     exit 1
 fi
  
-#echo $ARGS
+echo $ARGS
 #将规范化后的命令行参数分配至位置参数（$1,$2,...)
 eval set -- "${ARGS}"
  
@@ -53,4 +53,7 @@ for arg in $@
 do
     echo "processing $arg"
 done
+echo $1
+echo $2
+echo $3
 
